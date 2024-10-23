@@ -490,6 +490,13 @@
   dimensions = (horizontal_loop_extent,vertical_layer_dimension,number_of_tracers)
   type = real
   kind = kind_phys
+[dq_dt]
+  standard_name = instantaneous_tendency_of_specific_humidity
+  long_name = instantaneous tendency of specific humidity
+  units = kg kg-1 s-1
+  dimensions = (horizontal_loop_extent,vertical_layer_dimension)
+  type = real
+  kind = kind_phys
 [dqdt(:,:,index_of_specific_humidity_in_tracer_concentration_array)]
   standard_name = process_split_cumulative_tendency_of_specific_humidity
   long_name = water vapor specific humidity tendency due to model physics
