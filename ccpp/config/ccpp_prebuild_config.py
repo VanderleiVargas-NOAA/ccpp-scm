@@ -84,7 +84,7 @@ SCHEME_FILES = [
     # Relative path to source (from where ccpp_prebuild.py is called) : [ list of physics sets in which scheme may be called ];
     # current restrictions are that each scheme can only belong to one physics set, and all schemes within one group in the
     # suite definition file have to belong to the same physics set
-    'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_DCNV_generic_pre.F90'         ,
+    #'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_DCNV_generic_pre.F90'         ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_DCNV_generic_post.F90'        ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_GWD_generic_pre.F90'          ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_GWD_generic_post.F90'         ,
@@ -92,7 +92,7 @@ SCHEME_FILES = [
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_MP_generic_post.F90'          ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_PBL_generic_pre.F90'          ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_PBL_generic_post.F90'         ,
-    'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_SCNV_generic_pre.F90'         ,
+   # 'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_SCNV_generic_pre.F90'         ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_SCNV_generic_post.F90'        ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_phys_time_vary.scm.F90'       ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_rad_time_vary.scm.F90'        ,
