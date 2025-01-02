@@ -100,6 +100,8 @@ module CCPP_typedefs
     real (kind=kind_phys), pointer      :: dqsfc1(:)          => null()  !<
     real (kind=kind_phys), pointer      :: drain(:)           => null()  !<
     real (kind=kind_phys), pointer      :: dtdt(:,:)          => null()  !<
+    real (kind=kind_phys), pointer      :: dqtr_dt(:,:,:)     => null()  !<
+    real (kind=kind_phys), pointer      :: dclw_dt(:,:,:)     => null()  !<
     real (kind=kind_phys), pointer      :: dT_dt(:,:)         => null()  !<
     real (kind=kind_phys), pointer      :: dU_dt(:,:)         => null()  !<
     real (kind=kind_phys), pointer      :: dV_dt(:,:)         => null()  !<
@@ -507,6 +509,8 @@ contains
     allocate (Interstitial%dqsfc1          (IM))
     allocate (Interstitial%drain           (IM))
     allocate (Interstitial%dtdt            (IM,Model%levs))
+    allocate (Interstitial%dqtr_dt         (IM,Model%levs,Model%ntrac))
+    allocate (Interstitial%dclw_dt         (IM,Model%levs,Interstitial%nn))
     allocate (Interstitial%dT_dt           (IM,Model%levs))
     allocate (Interstitial%dU_dt           (IM,Model%levs))
     allocate (Interstitial%dV_dt           (IM,Model%levs))
@@ -1211,6 +1215,8 @@ contains
     Interstitial%drain           = clear_val
     Interstitial%dt_mf           = clear_val
     Interstitial%dtdt            = clear_val
+    Interstitial%dqtr_dt         = clear_val
+    Interstitial%dclw_dt         = clear_val
     Interstitial%dT_dt           = clear_val
     Interstitial%dU_dt           = clear_val
     Interstitial%dV_dt           = clear_val

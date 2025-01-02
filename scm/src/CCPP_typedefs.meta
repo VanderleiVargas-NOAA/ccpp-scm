@@ -309,6 +309,20 @@
   dimensions = (horizontal_loop_extent,vertical_layer_dimension,number_of_tracers_for_convective_transport)
   type = real
   kind = kind_phys
+[dqtr_dt]
+  standard_name = instantaneous_tendency_of_tracer_concentration
+  long_name = instantaneous tendency of tracer concentration
+  units = kg kg-1 s-1
+  dimensions = (horizontal_loop_extent,vertical_layer_dimension,number_of_tracers)
+  type = real
+  kind = kind_phys
+[dclw_dt]
+  standard_name = instantaneous_tendency_of_convective_transportable_tracers
+  long_name = instantaneous tendency of convective transportable tracers
+  units = kg kg-1 s-1
+  dimensions = (horizontal_loop_extent,vertical_layer_dimension,number_of_tracers_for_convective_transport)
+  type = real
+  kind = kind_phys
 [clw(:,:,1)]
   standard_name = ice_water_mixing_ratio_convective_transport_tracer
   long_name = ratio of mass of ice water to mass of dry air plus vapor (without condensates) in the convectively transported tracer array
