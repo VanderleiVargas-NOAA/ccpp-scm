@@ -88,7 +88,7 @@ SCHEME_FILES = [
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_DCNV_generic_post.F90'        ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_GWD_generic_pre.F90'          ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_GWD_generic_post.F90'         ,
-    'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_MP_generic_pre.F90'           ,
+    #'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_MP_generic_pre.F90'           ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_MP_generic_post.F90'          ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_PBL_generic_pre.F90'          ,
     'ccpp/physics/physics/Interstitials/UFS_SCM_NEPTUNE/GFS_PBL_generic_post.F90'         ,
